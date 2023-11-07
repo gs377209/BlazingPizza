@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  blazingpizza:
+    image: ${DOCKER_REGISTRY-}blazingpizza
+    build:
+      context: .
+      dockerfile: ./Dockerfile
